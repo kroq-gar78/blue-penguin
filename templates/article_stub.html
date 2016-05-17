@@ -9,7 +9,11 @@
                 </h2>
                 {% endif %}
 
+                {% if articles_page and article.summary %}
+                {{ article.summary }}
+                {% else %}
                 {{ article.content }}
+                {% endif %}
                 <div class="clear"></div>
 
                 <div class="info">
